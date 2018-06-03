@@ -1,0 +1,54 @@
+{
+  "name": "peer-version-check",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "peer-version-check": "cli.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "lodash.isequal": "^4.5.0",
+    "lodash.transform": "^4.6.0",
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "xo": "^0.21.1"
+  },
+  "files": [
+    "cli.js",
+    "src/peer-version-check.js"
+  ],
+  "scripts": {
+    "test": "xo && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanbuck/peer-version-check.git"
+  },
+  "author": "Stefan Buck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanbuck/peer-version-check/issues"
+  },
+  "homepage": "https://github.com/stefanbuck/peer-version-check",
+  "description": "Check whether every peerDependency is defined as a devDependency",
+  "keywords": [
+    "devDependency",
+    "peerDependencies",
+    "cli",
+    "peer",
+    "version",
+    "semver",
+    "semantic",
+    "check"
+  ],
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "envs": ["jest"],
+    "rules": {
+      "unicorn/no-process-exit": "off"
+    }
+  }
+}

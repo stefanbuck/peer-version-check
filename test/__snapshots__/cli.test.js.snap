@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`good 1`] = `
+Object {
+  "exitCode": 0,
+  "stdout": "",
+}
+`;
+
+exports[`missing devDependency 1`] = `
+Object {
+  "exitCode": 1,
+  "stdout": "Expected devDependency 'a' to be:
+   ^1.0.0
+Found:
+   undefined
+
+Expected devDependency 'b' to be:
+   ^1.0.0
+Found:
+   undefined
+
+",
+}
+`;
+
+exports[`missing peerDependency 1`] = `
+Object {
+  "exitCode": 1,
+  "stdout": "Expected devDependency 'b' to be:
+   ^1.0.0
+Found:
+   undefined
+
+",
+}
+`;
+
+exports[`no peerDependency 1`] = `
+Object {
+  "exitCode": 0,
+  "stdout": "",
+}
+`;
